@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Registration</legend>
+            <label>Username: <input name="username" type="text" required maxlength="8"></label>
+            <!--- if we add (name="username") will shown on source code -->
+            <label>Password: <input name="password" type="password" minlength="6" /> </label>
+        </fieldset>
+        <fieldset>
+            <input type="radio" name="sex" id="male"> <label for="male">Male</label>
+            <input type="radio" name="sex" id="female"> <label for="female">Female</label>
+            <lable> Age: <input type="number" name="Age" ></lable>
+        </fieldset>
+
+        <fieldset>
+            <label for="file-select">Upload form:</label>
+            <input type="file" name="upload" id="file-select">
+        </fieldset>
+
+        <fieldset>
+            <label for="address">Address:</label>
+            <textarea rows="3" cols="30" name="address" id="address"></textarea>
+            <br>
+            <label> Email: <input type="email" name="Email"></label>
+        </fieldset>
+        <fieldset> 
+        <label> Date of Birth: <input type="date" name="Date of Birth"></label>
+        <br>
+    </fieldset>
+        <input type="submit" value="Submit">
+
+
+    </form>
+</body>
+
+</html>

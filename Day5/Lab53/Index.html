@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            -webkit-animation: mymove 5s infinite;
+            /*
+         Safari 4.0 - 8.0 */
+            animation: mymove 8s infinite;
+            animation-direction: alternate;
+        }
+
+        /* @-webkit-keyframes mymove {   <!--- is paser engine for safari and chrome -->
+            from {
+                left: 0px;
+                width: 100px;
+                height: 100px;
+                border-radius: 0em;
+            }
+
+            to {
+                left: 200px;
+                width: 400px;
+                height: 400px;
+                border-radius: 15em;
+                background-color: yellow;
+            }
+        } */
+
+        @keyframes mymove {
+            from {
+                border-radius: 0em;
+                left: 0px;
+                background: rgb(142, 209, 33);
+            }
+
+            to {
+                left: 200px;
+                width: 200px;
+                height: 200px;
+                border-radius: 15em;
+                background: yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Animation</h1>
+    <p>Move an element from 0px to 200px left. The
+        animation lasts for 5 seconds. It then starts over
+        again, and go on forever (infinite).</p>
+    <div></div>
+    <p><strong>Note:</strong> The animation property is not supported in Internet Explorer 9 and earlier versions.</p>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</html>
+<style>
+    div.relative {
+        position: relative;
+        /* if we delete the position will take the default position which is static, 
+        so the another box will depend on body tag*/
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73AD21;
+    }
+
+    div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+    }
+
+    div.sticky {
+        position: sticky;
+        width: 100px;
+        height: 50px;
+        border: 3px solid #73AD21;
+    }
+</style>
+</head>
+
+<body>
+    <h2>CSS Position attribute</h2>
+    <div class="relative">This element position:
+        relative;
+        <div class="absolute">This element has
+            position: absolute;
+        </div>
+        <div class="sticky">This element has
+            position: sticky;
+        </div>
+    </div>
+
+</body>
+
+</html>

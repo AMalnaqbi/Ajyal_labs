@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div.padding {
+            padding-top: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="padding" width: 200px; height: 200px;>
+        <div class="padding" style="background-color:green; width: 50px; height: 50px;">
+            <!-- the hight & width = 150 and I have extra 50 padding so 150+50=200 -->
+            <div style="background-color:blue; width: 50px; height: 50px;">
+                <!-- no need for padding because if we abstract the padding from the height and width will be on (-)-->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
