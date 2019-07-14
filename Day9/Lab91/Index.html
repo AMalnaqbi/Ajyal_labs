@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <h2>JavaScript Number Methods</h2>
+    <p>Using different number methods to return same number in different forms:</p>
+    <p id="xba"></p>
+    <script>
+        var x = 999.99;
+        document.getElementById("xba").innerHTML =
+            x.valueOf() + "<br>"  //print the value of x
+            + x.toString() + "<br>" //pring the value of x as string
+            + x.toExponential(4) + "<br>" //take one integar and 4 decimal
+            + x.toFixed(4) + "<br>" //leave 4 decimals "add zeros if needed"
+            + x.toPrecision(4) //real number our of 4 integer number 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <p>Click button for displaying the onclick attribute value of the button element.</p>
+    <button id="DigitalE1Btn" onclick="DigitalE1Function()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        function DigitalE1Function() {  /* getAttribute will give us attribute value of onclick which is (DigitalFunction())*/
+            var x =
+                document.getElementById("DigitalE1Btn").getAttribute("onclick");
+            document.getElementById("demo").innerHTML = x;
+            console.log('hi there');
+        } 
+    </script>
+</body>
+
+</html>

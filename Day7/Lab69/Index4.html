@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input id="myInput" type="text" style="width:150px" />
+    <button onclick="updatePara()">Click Me!</button>
+    <p id="p1"></p>
+    <script>
+        function updatePara() {
+            // parseFloat(input);
+            var input = document.getElementById("myInput").value;
+            document.getElementById("p1").innerHTML = input;
+        }
+
+    </script>
+</body>
+
+</html>
